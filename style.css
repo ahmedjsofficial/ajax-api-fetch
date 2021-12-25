@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: 'Ubuntu', sans-serif;
+}
+body{
+	background: #eee;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.dropdown-divider{
+	border: 1px solid #000;
+	width: 80%;
+	margin: 0 auto;
+}
+.card-img img{
+	width: 250px;
+	height: 250px;
+}
+.card{
+	min-width: 0;
+	display: flex;
+	object-fit: fill;
+	text-align: center;
+	position: relative;
+	background: white;
+	word-wrap: break-word;
+	flex-direction: column;
+	border-radius: 0.25rem;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	padding: 25px;
+	height: 500px;
+	background: #42f56c;
+}
+.card-img .country-title{
+	font-size: 3rem;
+	font-weight: 1000;
+	letter-spacing: 0.5rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem rgba(0,0,0,0.3);
+}
+.card-header,
+.card-footer,
+.card-body{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

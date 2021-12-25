@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Fetch | AJAX</title>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div id="container">
+		<div class="card">
+			<div class="card-img">
+				<h1 class="country-title">Pakistan</h1>
+				<img src="https://restcountries.eu/data/pak.svg" alt="card/img" />
+			</div>
+			<div class="card-header">
+				<div class="capital">
+					<p>Capital</p>
+					<h3>Islamabad</h3>
+				</div>
+				<div class="region">
+					<p>Region</p>
+					<h3>ASIA</h3>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="pop">
+					<p>Population</p>
+					<h3>194125062</h3>
+				</div>
+				<div class="demon">
+					<p>Demonym</p>
+					<h3>Pakistani</h3>
+				</div>
+
+			</div>
+			<div class="card-footer">
+				<div class="curr">
+					<p>Currency</p>
+					<h3>PKRs/RS</h3>
+				</div>
+				<div class="lng">
+					<p>Languages</p>
+					<h3>URD/Eng</h3>
+				</div>
+			</div>
+			<div class="republic">
+				<div class="time">
+					<p>Timezones</p>
+					<h3>UTC+05:00</h3>
+				</div>
+				<h5>Republic: Islāmī Jumhūriya'eh Pākistān</h5>
+			</div>
+		</div>
+	</div>
+
+<!-- 	<script type="text/javascript">
+		const container = document.getElementById("container");
+
+		const request = new XMLHttpRequest();
+		request.open('GET', "https://restcountries.eu/rest/v2/name/pakistan");
+		request.send();
+
+		//to get the response
+		request.addEventListener('load', function () {
+			// const data = this.responseText;
+			const [data] = JSON.parse(this.responseText);
+			const htmlData = `
+				<div id="card">
+					<div class="card-img">
+						<img src="${data.flag}" alt="">
+					</div>
+					<div class="card-header">
+						<h1>${data.name}</h1>
+						<h5>Capital : ${data.capital}</h5>
+					</div>
+					<div class="card-body">
+						<h3>${data.nativeName}</h3>
+						<p>Native Language</p>
+					</div>
+					<div class="card-footer">
+						<h3>${data.population}</h3>
+						<p>Population</p>
+					</div>
+					<div class="card-social">
+						<h3>${data.demonym}</h3>
+						<p>Demonym</p>
+					</div>
+				</div>
+			`;
+			container.insertAdjacentHTML("afterbegin",htmlData);
+		})
+	</script>
+ -->
+
+</body>
+</html>
